@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+        integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+        crossorigin="anonymous"></script>
+    <title>To-do list</title>
+</head>
+
+<body onload="actualDate()">
+
+    <div class="container">
+        <h1>
+            <script>
+                moment.locale('fr');
+                function actualDate() {
+                    var number = moment().format('dddd ' + 'LL');
+                    document.getElementById("date").innerHTML = number;
+                }
+            </script>
+            <p>Nous sommes le :</p>
+            <span id="date"></span>
+        </h1>
+
+        <form class="todo-form">
+            <input type="text" class="todo-input" placeholder="Add a new task...">
+            <button type="submit" class="add-button">+</button>
+        </form>
+
+        <ul class="todo-items">
+            <li class="item" data-key="1594003133171">
+                <input class="checkbox" type="checkbox">
+                <div class="delete-button-container">
+                    <button class="delete-button">X</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

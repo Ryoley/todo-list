@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(120deg, #d6dbff, #ce9aec);
+    font-family: sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #975ab3;
+    color: #d29aec;
+}
+
+button:active {
+    cursor: pointer;
+    background-color: #714486;
+    color: #9d74b1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    min-width: 700px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 10vh;
+    padding: 15px;
+    width: 100% auto;
+    text-align: center;
+    border: 4px solid #975ab3;
+    border-radius: 10px;
+    background: #bc71df;
+}
+
+p {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 40px;
+    justify-content: center;
+    width: 100%;
+}
+
+.todo-input {
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 25px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    width: 35vh;
+}
+
+.add-button {
+    background-color: #bc71df;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0px 25px;
+    border-radius: 100%;
+    font-size: 35px;
+}
+
+.todo-items {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    margin: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 0 auto;
+    height: 100% auto;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 25px;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    font-size: 1.1rem;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.checkbox {
+    margin-right: 15px;
+    align-self: center;
+}
+
+.delete-button-container {
+    height: 100%;
+    width: 75%;
+    align-items: center;
+}
+
+.delete-button {
+    float: right;
+    background-color: #d29aec;
+    border: none;
+    outline: none;
+    color: #975ab3;
+    border-radius: 5px;
+    padding: 4px 6px;
+    margin-left: 10px;
+    font-size: 15px;
+    border-radius: 100%;
+    font-weight: 600;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+.checked {
+    text-decoration: line-through;
+}
