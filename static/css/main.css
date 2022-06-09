@@ -10,7 +10,7 @@
     --darker-primary: #b38c00;
     --primary-transparent: #ffc80080;
     --secondary: #323755;
-    --light-secondary :#414b7d;
+    --light-secondary: #414b7d;
     --dark-secondary: #191e32;
     --secondary-transparent: #32375580;
     --black: #000;
@@ -157,6 +157,13 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+}
+
+.app ul li .task {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .check {

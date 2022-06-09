@@ -19,7 +19,7 @@ function loadTasks() {
     tasks.forEach(task => {
         const list = document.querySelector("ul");
         const li = document.createElement("li");
-        li.innerHTML = `<div><input type="checkbox" onclick="taskComplete(this)" class="check" ${task.completed ? 'checked' : ''}>
+        li.innerHTML = `<div class="task"><input type="checkbox" onclick="taskComplete(this)" class="check" ${task.completed ? 'checked' : ''}>
         <input type="text" value="${task.task}" class="task ${task.completed ? 'completed' : ''}" onfocus="getCurrentTask(this)" onblur="editTask(this)"></div>
         <i class="fa fa-trash" onclick="removeTask(this)"></i>`;
         list.insertBefore(li, list.children[0]);
