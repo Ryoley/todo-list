@@ -15,11 +15,9 @@
     --secondary-transparent: #32375580;
     --black: #000;
     --green: #1ed2af;
-    --dark-green: #18ab8d;
-    --light-grey: #e1e1e1;
-    --dark-grey: #191919;
-    --pink: #dc4be6;
+    --dark-green: #19aa8c;
     --red: #ff4b4b;
+    --dark-red: #c83c3c;
     --white: #fff;
 }
 
@@ -128,7 +126,7 @@ body {
     outline: none;
 }
 
-.app form button {
+.app form .btn-add-task {
     border: none;
     color: var(--white);
     cursor: pointer;
@@ -137,11 +135,27 @@ body {
     font-weight: 600;
     height: 100%;
     transition: all .275s;
-    width: 10%;
+    width: 15%;
 }
 
-.app form button:hover {
+.app form .btn-add-task:hover {
     background-color: var(--dark-green);
+}
+
+.app form .btn-clear-tasks {
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    background-color: var(--red);
+    font-size: 25px;
+    font-weight: 600;
+    height: 100%;
+    transition: all .275s;
+    width: 15%;
+}
+
+.app form .btn-clear-tasks:hover {
+    background-color: var(--dark-red);
 }
 
 .app ul {
@@ -193,12 +207,13 @@ body {
     outline: none;
 }
 
-.app ul li i {
+.app ul li .remove-task {
+    color: var(--white);
     cursor: pointer;
     float: right;
 }
 
-.app ul li i:hover {
+.app ul li .remove-task:hover {
     color: var(--red);
 }
 
