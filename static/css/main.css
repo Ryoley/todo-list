@@ -16,6 +16,7 @@
     --black: #000;
     --green: #1ed2af;
     --dark-green: #19aa8c;
+    --orange: #ffaf00;
     --red: #ff4b4b;
     --dark-red: #c83c3c;
     --white: #fff;
@@ -98,7 +99,7 @@ body {
 }
 
 .app h1 {
-    background: linear-gradient(to right, var(--primary), var(--dark-primary));
+    background: linear-gradient(to right, var(--primary), var(--orange));
     border-radius: .5rem .5rem 0 0;
     color: var(--white);
     font-size: 40px;
