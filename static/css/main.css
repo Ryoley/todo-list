@@ -136,7 +136,7 @@ body {
     font-weight: 600;
     height: 100%;
     transition: all .275s;
-    width: 15%;
+    width: 75px;
 }
 
 .app form .btn-add-task:hover {
@@ -152,7 +152,7 @@ body {
     font-weight: 600;
     height: 100%;
     transition: all .275s;
-    width: 15%;
+    width: 75px;
 }
 
 .app form .btn-clear-tasks:hover {
