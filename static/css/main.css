@@ -13,13 +13,13 @@
     --light-secondary: #414b7d;
     --dark-secondary: #191e32;
     --secondary-transparent: #32375580;
-    --black: #000;
+    --black: #000000;
     --green: #1ed2af;
     --dark-green: #19aa8c;
-    --orange: #ffaf00;
+    --orange: #ff9600;
     --red: #ff4b4b;
     --dark-red: #c83c3c;
-    --white: #fff;
+    --white: #fffff;
 }
 
 /*—————————————————————————————————————————————————————————————————————*/
@@ -184,10 +184,10 @@ body {
 .check {
     background-color: var(--white);
     border: 1px solid var(--white);
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
-    height: 0.8em;
-    width: 0.8em;
+    min-height: 0.8em;
+    min-width: 0.8em;
     -webkit-appearance: none;
 }
 
